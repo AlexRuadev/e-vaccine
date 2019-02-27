@@ -1,0 +1,614 @@
+@import "reset.css";
+
+body {
+  font: 400 16px/1.3 Arial, sans-serif;
+  color: #1D4B8C;
+  background-color: rgb(241, 242, 243);
+  overflow-x: hidden;
+}
+
+.wrap {
+  max-width: 1040px;
+  width: 100%;
+  margin : 0 auto;
+  padding: 0 10px;
+}
+
+.wrap-form {
+  max-width: 840px;
+  width: 100%;
+  margin : 0 auto;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: #53A338;
+}
+
+.er404{
+  margin: 120px 0;
+  font-size: 1.3em;
+}
+
+.maj {
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding-bottom: 8px;
+}
+
+.er404 .maj {
+    display: block;
+    font-size: 2em;
+}
+
+ #header {
+  background-color: #EFFBFB;
+  padding: 20px 0 5px 0;
+  margin-bottom: 20px;
+}
+
+#header .logo img {
+  width: 120px;
+  height: 120px;
+  margin-right: 200px;
+  float: left;
+}
+#header .logo img:hover {
+  transform: rotate(5deg) scale(.9);
+}
+#header .titre {
+  float: left;
+  margin-left: 10px;
+
+}
+
+#header h1 {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 1.7em;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+#header h2 {
+  font-family: 'Cinzel', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  padding-left: 150px;;
+}
+
+#header .menunav {
+  height: 50px;
+}
+
+#header .menunav ul li a {
+  float: left;
+  margin-top: 20px;
+  margin-right: 6px;
+  border-radius: 3px;
+  width: 18%;
+  background-color: #63C0C7;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.3s;
+}
+
+#header .menunav ul li .dernierlien {
+  float: right;
+  background-color: #1D4B8C;
+}
+
+#header .menunav ul li .liendeco {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position:relative;
+
+}
+
+#header .menunav ul li a:hover {
+  background-color: #4E9BA0;
+  color: white;
+}
+
+#header .menunav ul li .dernierlien:hover {
+  background-color: #4573b4;
+}
+
+.menunav ul li a.liendeco i{
+  position: absolute;top:11px;left:11px;
+}
+
+#contenu {
+  padding: 0 0 20px 0;
+}
+
+#contenu h3 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  padding-left: 15px;
+  margin: 40px 0 10px 0;
+}
+
+ /* sliderrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+#contenu .actus .articles {
+  min-height: 440px;
+  width: 100%;
+  padding: 20px;
+  float: left;
+  background-color: #EFFBFB;
+  box-shadow: 3px 3px #ccc;
+  border-radius: 20px;
+}
+
+#contenu .actus img {
+  float: left;
+  max-width: 400px;
+  width: 100%;
+  min-width: 100px;
+  max-height: 400px;
+}
+
+#contenu .actus .articles .text-article {
+  max-width: 570px;
+  width: 100%;
+  float: right;
+  margin-top: 10px;
+  line-height: 1.5em;
+}
+
+#contenu .importance .text-importance {
+  line-height: 1.5em;
+  box-shadow: 3px 3px #ccc;
+}
+
+#contenu .voyage .text-voyage {
+  line-height: 1.5em;
+  box-shadow: 3px 3px #ccc;
+}
+
+#contenu .actus .date {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+#contenu .actus p {
+  font-size: 0.9em;
+}
+
+#contenu .pays {
+  text-decoration: underline;
+}
+
+#contenu .importance .text-importance {
+    padding: 20px;
+    background-color: #EFFBFB;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+#contenu .voyage .text-voyage{
+    padding: 20px;
+    background-color: #EFFBFB;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+#contenu .case-vaccin {
+  padding: 20px;
+  background-color: #EFFBFB;
+  border-radius: 20px;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px #ccc;
+}
+
+#contenu .case-vaccin .nom-vaccin, #contenu .case-vaccin .desc-vaccin, #contenu .case-vaccin .importance-vaccin {
+  float: left;
+}
+
+#contenu .case-vaccin .nom-vaccin {
+  width: 25%;
+}
+
+#contenu .case-vaccin h3 {
+  margin: inherit;
+  margin-top: 10px;
+}
+
+#contenu .case-vaccin .desc-vaccin {
+  width: 60%;
+}
+
+#contenu .case-vaccin .importance-vaccin {
+  width: 40%;
+  height: 56px;
+  padding-top: 20px;
+  margin-top: -40px;
+}
+
+#contenu .case-vaccin .importance-vaccin p {
+  float: right;
+  padding-right: 10px;
+}
+
+#contenu .case-vaccin:first-child {
+  margin-top: 20px;
+}
+
+#contenu .case-vaccin .vac-fac {
+  border-right: 4px #F7E136 solid;
+}
+
+#contenu .case-vaccin .vac-rec {
+  border-right: 4px orange solid;
+}
+
+#contenu .case-vaccin .vac-obl {
+  border-right: 4px red solid;
+}
+
+#contenu .voyage .text-voyage p {
+  margin: 10px 0;
+}
+#contenu .espace {
+  line-height: 1.7;
+  padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+#contenu .top {
+  margin-top: 60px;
+
+}
+
+
+
+/* style tableau vaccins */
+table.table {
+  font-family: verdana, arial, sans-serif;
+  font-size: 11px;
+  border-width: 1px;
+  border-color: black;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.table th {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #517994;
+  background-color: #EFFBFB;
+  text-transform: uppercase;
+}
+
+table.table td {
+  background-color: #DFEBF1;
+}
+
+table.table td {
+  text-align: center;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #517994;
+  background-color: #F1F2F3;
+}
+
+.btnConfirm {
+  background-color: #1D4B8C;
+  border: #1D4B8C;
+  border-radius: 2px;
+  padding: 5px 15px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btnConfirm:hover{
+  background-color: #4573b4;
+}
+
+
+.btnInsc {
+  background-color: #1D4B8C;
+  border: #1D4B8C;
+  border-radius: 2px;
+  padding: 5px 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.6em;
+
+}
+
+.btnInsc:hover{
+  background-color: #4573b4;
+}
+
+/* vaccins */
+
+
+form {border:3px solid #ccc;  margin-top:60px; padding-top: 30px; margin-bottom: 50px;border-radius: 10px; width:100%;}
+h2 {text-align: center; padding-top: 10px; font-weight: bold; font-size: 1.3em;}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: #4475B5;
+    display: inline-block;
+    border: radius 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.sans-margin {
+  margin-top: 0;
+  padding: 20px;
+  line-height: 1.5em;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  color: #4475B5;
+  display: inline-block;
+  border: radius 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* profil */
+a.modifmdp{
+  font-size: .9em;
+
+}
+
+td.paraC{
+padding-top: 70px;
+}
+.container  {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-bottom: 20px;
+    padding-top: 1px;
+    width:100%;
+}
+
+ /* Connexion */
+
+.pswfrg {
+  float: right;
+  font-size: .8em;
+  margin-top: 15px;
+}
+
+.wrap a{
+  width: 100%;
+}
+
+.containerBtn {
+   text-align: center;
+  margin-top: 15px;
+}
+.containerBtn .btnConfirm{
+  /* margin: 0 auto;display: block; */
+}
+.containerBtn .btnConfirm2{
+  background-color: lime;
+}
+
+.center {
+  text-align: center;
+
+}
+
+form.wrap{
+  padding: 40px;
+}
+
+/* carnet */
+.liens-paramcompte {
+  margin-top: 30px;
+  height: 50px;
+  margin-right: -2%;
+}
+
+.liens-paramcompte .lien-paracompte {
+  width: 48%;
+  margin-right: 2%;
+  text-align: center;
+  float: left;
+  background-color: #1D4B8C;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px 50px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+}
+
+.liens-paramcompte .lien-paracompte:active {
+  box-shadow: 1px 1px black;
+}
+.numlot {
+  width: 150px;
+  height: 20px;
+  margin-left: 10px;
+}
+input.numlot1 {
+  width: 150px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+
+
+
+/* footer */
+#footer {
+  background-color: #EFFBFB;
+  margin-top: 20px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+#footer a {
+  color: #1D4B8C;
+}
+
+#footer h3 {
+  text-transform: uppercase;
+  max-width: 33.333333333333333333333333%;
+}
+
+#footer .sectionx {
+  float: left;
+  width: 33.3333333333333333333333333333%;
+  line-height: 1.8em;
+  margin: 30px 0;
+}
+
+
+
+.sectionx h3 {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+#footer form {
+  border: none;
+  padding: 0 35px;
+}
+
+#footer .champ{
+  margin-bottom: 50px;
+  color: #4475B5;
+  max-width: 269px;
+}
+
+#footer .sectionx form {
+  all: inherit;
+}
+
+#footer form input[type=email] {
+  color:#D7DBDD;
+  width: 250px;
+}
+
+#footer .copyright{
+  text-align: center;
+}
+
+/* forgotten_pass */
+form.forgotten_pass {
+
+  padding: 35px 15px 35px 15px;
+  width: 100%;
+}
+
+.numlotemail {
+  width: 60%;
+  margin-left: 20%;
+}
+
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+
+    .cancelbtn {
+       width: 100%;
+    }
+
+    #header .titre {
+      margin-top: 0;
+      padding-right: 0;
+    }
+  }
+
+/* formulaire */
+/* Full-width input fields */
+input[type=text], input[type=password],  {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    text-decoration-color: #D7DBDD;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: ;
+    outline: none;
+}
+
+input[type=submit].connexion{
+  width: 10%;
+  margin-top: 20px;
+}
+input[type=submit].sinscrire{
+  width: 10%;
+  margin-bottom: 20px;
+}
+
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+
+    .btnConfirm {
+      width: 100%;
+    }
+
+    #header .titre {
+      margin-top: 0;
+      padding-right: 0;
+    }
+
+    #header h2 {
+      padding-left: 0;
+    }
+
+    .liens-paramcompte .lien-paracompte {
+      padding: 5px 10px;
+      font-size: 0.5em;
+    }
+
+    .btnConfirm {
+      font-size: 0.5em;
+    }
+}
